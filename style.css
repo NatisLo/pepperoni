@@ -1,0 +1,79 @@
+*{
+    padding:0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+
+h1 {
+    background-image: url("images/bg.jpg");
+    background-size: cover;
+    background-position: center 70%;
+    height: 500px;
+    text-align: center;
+    line-height: 500px;
+    font-size: 8em;
+    color: darksalmon;
+    text-shadow: 5px 5px 10px black;
+}
+h2{
+    font-size: 3em;
+    text-transform: uppercase;
+    margin-bottom: 0.5em;
+}
+h3{
+    font-size: 2.5em;
+    text-transform: uppercase;
+    margin-bottom: 0.3em;
+}
+p,dl {
+    font-size: 2em;
+}
+
+dt{
+    text-decoration: underline;
+}
+
+dt::after{
+    content: ": ";
+}
+dd, dt {
+    display: inline-block;
+}
+
+ol{
+list-style-type: none;
+list-style-position: inside;
+counter-reset: number;
+}
+
+
+
+ ol li::before{
+    content: "Шаг " counter(number);
+    counter-increment: number;
+    font-weight: bold;
+ }
+
+ol,p{
+    font-size: 1em;
+    display: inline-block;
+    margin-right: 20px;
+    max-width: calc(100%-460);
+    vertical-align: top;
+}
+
+.container {
+    width: 1140px;
+    margin: auto 100px auto;
+}
+.desc {
+    text-align: justify;
+    font-size: 2em;
+    margin: 2em 0;
+}
+
+.step-img{
+    max-width: 400px;
+    float: right;
+    vertical-align: middle;
+}
