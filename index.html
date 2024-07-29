@@ -7,16 +7,30 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1> Пицца пепперони</h1>
-    <div class="container">
-        <p class="desc">
+    <h1 class="header-banner"> Пицца пепперони</h1>
+    <main class="container">
+        <section class="intro"> 
+            <article class="intro_article"> 
+
+            </article>
+        <p class="intro__p">
             Вряд ли найдется человек, который не любит пиццу. Эти кусочки мягкого теста с разнообразной сочной начинкой покорили весь мир. Пепперони занимает лидирующие позиции среди остальных видов не зря: у пиццы замечательный солено-острый вкус.  
         </p>
-        <h2>Время приготовления</h2>
-        <p>1 час 40 минут</p>
-        <h2>Ингредиенты</h2>
-        <h3>ТЕСТО</h3>
-        <dl>
+    </section>
+
+    <section class="cook-time"> 
+        <h2 class="cook-time__header">Время приготовления</h2>
+        <p class="cook-time__value">1 час 40 минут</p>
+
+    </section>
+
+    <section class="ingredients"> 
+        <h2 class="ingredients__header">Ингредиенты</h2>
+        <article class="element ingredients__element">
+
+        
+        <h3 class="element__header">ТЕСТО</h3>
+        <dl class="element__list">
             <dt>Пшеничная мука</dt>
             <dd>250г</dd>
             <br>
@@ -37,8 +51,12 @@
             <br>
 
         </dl>
-        <h3>СОУС</h3>
-        <dl>
+    
+
+    </article>
+    <article class="element ingredients__element">
+        <h3 class="element__header">СОУС</h3>
+        <dl class="element__list">
             <dt>Помидоры</dt>
             <dd>1г</dd>
             <br>
@@ -66,9 +84,15 @@
             <dt>Соль</dt>
             <dd>по вкусу</dd>
             <br>
+        </dl>
         
-        
-        <h3>Начинка</h3>
+        </article>
+
+        <article class="element ingredients__element">
+
+       
+        <h3 class="element__header" >Начинка</h3>
+        <dl class="element__list">
         <dt>Моцарелла(для пиццы)</dt>
         <dd>120 грамм</dd>
         <br>
@@ -76,25 +100,58 @@
         <dd>100г</dd>
         <br> 
         </dl>
+    </article>
+    </section>
 
-        <h2>Приготовление</h2>
-        <ol> 
-            <li>
-                <p> 
-                    Как сделать пиццу Пепперони в домашних условиях? Для начала подготовьте ингредиенты для теста.
-                    <img  class="step-img " src="images/step1.jpg" alt="Шаг 1"/>
-                </p>
-            </li>
-        </ol>
-        
-        <ul>
-            <li>
-                Так как степень солености, сладости, горечи, остроты, кислоты, жгучести у каждого индивидуальная, всегда добавляйте специи, пряности и приправы, ориентируясь на свой вкус! Если какую-то из приправ вы кладете впервые, то учтите, что есть специи, которые особенно важно не переложить (например, перец чили). 
-            </li>
-            <li>
-                Учитывайте, что духовки у всех разные. Температура и время приготовления могут отличаться от указанных в рецепте. Чтобы любое запеченное блюдо получилось успешным, воспользуйтесь полезной информацией об особенностях духовок!
-            </li>
-        </ul>
-    </div>
+        <section class="cooking">
+            <h2 class="cooking__header">Приготовление</h2>
+            <article class="cooking__main">
+                <ol class="cooking__process"> 
+                    <li class="cooking__step cooking-step">
+                        <p class="cooking-step__description"> 
+                            Как сделать пиццу Пепперони в домашних условиях? Для начала подготовьте ингредиенты для теста.
+                            
+                        </p>
+                        <img  class="cooking-step__img " src="images/step1.jpg" alt="Шаг 1"/>
+                    </li>
+                    <li class="cooking__step cooking-step">
+                        <p class="cooking-step__description"> 
+                            Как сделать пиццу Пепперони в домашних условиях? Для начала подготовьте ингредиенты для теста.
+                            
+                        </p>
+                        <img  class="cooking-step__img " src="images/step1.jpg" alt="Шаг 2"/>
+                    </li>
+
+                    <li class="cooking__step cooking-step">
+                        <p class="cooking-step__description"> 
+                            Как сделать пиццу Пепперони в домашних условиях? Для начала подготовьте ингредиенты для теста.
+                            
+                        </p>
+                        <img  class="cooking-step__img " src="images/step1.jpg" alt="Шаг 3"/>
+                    </li>
+
+                </ol>
+
+            </article>
+
+            <aside class="cooking__note">
+                <ul class="cooking__annotation">
+                    
+                    <li>
+                        Так как степень солености, сладости, горечи, остроты, кислоты, жгучести у каждого индивидуальная, всегда добавляйте специи, пряности и приправы, ориентируясь на свой вкус! Если какую-то из приправ вы кладете впервые, то учтите, что есть специи, которые особенно важно не переложить (например, перец чили). 
+                    </p>
+                    
+                    </li>
+                    
+                        <li>
+                        Учитывайте, что духовки у всех разные. Температура и время приготовления могут отличаться от указанных в рецепте. Чтобы любое запеченное блюдо получилось успешным, воспользуйтесь полезной информацией об особенностях духовок!
+                    </p>
+                    
+                    </li>
+                </ul>
+            </aside>
+
+        </section>
+    </main>
 </body>
 </html>
