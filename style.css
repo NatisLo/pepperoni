@@ -5,28 +5,32 @@
 }
 
 .header-banner {
-    background-image: url("images/bg.jpg");
-    background-size: cover;
+    width: 100vw;
+    height: 50vh;
+    background-image:  url("images/bg.jpg");
     background-position: center 70%;
-    height: 500px;
-    text-align: center;
-    line-height: 500px;
-    font-size: 8em;
-    color: darksalmon;
-    text-shadow: 5px 5px 10px black;
+   
+}
+.header-banner h1{
+
+   
+ 
+    line-height: 150%;
+    font-size: 4em;
+    
 }
 h2{
-    font-size: 3em;
+    font-size: 2.2em;
     text-transform: uppercase;
     margin-bottom: 0.5em;
 }
 h3{
-    font-size: 2.5em;
+    font-size: 1.8em;
     text-transform: uppercase;
     margin-bottom: 0.3em;
 }
 p,dl {
-    font-size: 2em;
+    font-size: 1.5em;
 }
 
 .intro__p{
@@ -111,4 +115,39 @@ grid-template-columns: repeat(2, 1fr);
 .cooking-step__img{
     width: 100%;
 
+}
+@media screen and (max-width: 480px) {
+    *{
+        border: 1px dashed red;
+        max-width: 100vw;
+    }
+
+    .header-banner {
+        width: 100vw;
+        font-size: 4em;
+        line-height: 150%;
+        height: 50vh;
+    }
+    .cooking__process {
+        grid-template-columns: 1fr;
+    }
+   
+}
+@media (min-width: 960px) {
+    .ingredients {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .ingredients__header {
+        grid-column: 1/4;
+    }
+}
+
+.cooking-step {
+    contain: layout inline-size;
+}
+@container (max-width: 300px) {
+    .cooking__step {
+        font-size: 0.5em;
+    }
 }
