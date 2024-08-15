@@ -138,7 +138,7 @@ grid-template-columns: repeat(2, 1fr);
         display: grid;
         grid-template-columns: repeat(3, 1fr);
     }
-    .ingredients__header {
+    .ingredients__header , .ingredients__converter {
         grid-column: 1/4;
     }
 }
