@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Заказать пиццу</h1>
+    <form>
+        <form>
+            <h3>Регистрация</h3>
+            
+           <fieldset> 
+            <div class="field">
+              <label for="name">Имя пользователя</label>
+              <input class="text-input" type="text"  id="name" name="name" placeholder="Введите логин" />
+            </div>
+        
+             <div class="field">
+               <label for="email">Телефон</label>
+               <input class="text-input" type="email" id="name" name="email" placeholder="Ведите  email" />
+             </div>
+        
+              <div class="field">
+                <label for="password">Адрес</label>
+                <input class="text-input" type="password" id="password" id="password"  name="password" placeholder="Введите пароль" />
+              </div>
+             
+              <div class="field">
+                <label for="confirm-password">Пожелания</label>
+                <input class="text-input" type="password" id="confirm-password" name="confirm-password" placeholder="Подтвердите пароль" />
+              </div>
+        
+         </fieldset>
+        <select class="country" name="country">
+          <option value="ru">Песто</option>
+          <option value="bl">Четыре сыра</option> 
+        <option value="kz">Маргарита</option>
+          <option value="ro">С креветками</option>
+        </div>
+          <div class="field">
+            <label for="birthday">Дата заказа</label>  
+            <input type="date" name="birthday" />
+          </div>
+        </select>
+        
+        
+            
+            <div>
+            <input type="radio" id="admin" name="user-type" value="user" checked>
+            <label for="admin">Администратор</label>
+            </div>
+            <div>
+            <input type="radio" id="user" name="user-type" value="admin">
+            <label for="admin">Пользователь</label>
+              </div>
+            <div>
+              <input type="checkbox"/>
+              <label for="chackbox">Я согласен с условиями  </label>
+            </div>
+            <div class="form-controls">
+              <input class="form-button" type="submit" value="Принять" />
+              <input class="form-button" type="reset" value="Очистить" />  
+            </div>
+          </form>     
+    </form>
+</body>
+</html>

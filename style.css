@@ -151,3 +151,19 @@ grid-template-columns: repeat(2, 1fr);
         font-size: 0.5em;
     }
 }
+.order{
+    display: block;
+    width: fit-content;
+    padding: 10px;
+    height: 80px;
+    border-radius: 40px;
+    position: fixed;
+    bottom: 80px;
+    right: 80px;
+    background-color: red;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    text-transform:  uppercase;
+    text-decoration: none;
+}
